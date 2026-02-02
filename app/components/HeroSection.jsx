@@ -29,14 +29,26 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="mb-8"
+          className="mb-8 select-none pointer-events-none"
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
         >
           <Image
             src="/blindpass.png"
             alt="Blind Pass"
             width={400}
             height={400}
-            className="w-64 sm:w-80 md:w-96 h-auto drop-shadow-2xl"
+            className="w-64 sm:w-80 md:w-96 h-auto drop-shadow-2xl select-none pointer-events-none"
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
+            style={{
+              userSelect: "none",
+              WebkitUserSelect: "none",
+              MozUserSelect: "none",
+              msUserSelect: "none",
+              pointerEvents: "none",
+            }}
           />
         </motion.div>
 
