@@ -16,32 +16,7 @@ const SpotifyPlaylistSection = () => {
   }, []);
 
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-br from-white via-pink-50 to-purple-50 overflow-hidden">
-      {/* Decorative elements */}
-      <motion.div 
-        className="absolute top-0 left-0 w-64 h-64 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.5, 0.8, 0.5],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div 
-        className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-60"
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.6, 0.8, 0.6],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
+    <section className="relative py-16 md:py-24 bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 overflow-hidden">
 
       <div className="relative container mx-auto px-4 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
         {/* Text Content */}
@@ -54,30 +29,30 @@ const SpotifyPlaylistSection = () => {
         >
           <div className="space-y-2">
             <motion.span 
-              className="inline-block text-pink-600 font-medium tracking-wider text-sm uppercase"
+              className="inline-block text-orange-600 font-medium tracking-wider text-sm uppercase"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
               Playlist Officielle
             </motion.span>
-            <h2 className="text-4xl md:text-5xl font-black font-[Montserrat] bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-              REVIVEZ L'EXPÉRIENCE
+            <h2 className="text-4xl md:text-5xl font-black font-[Montserrat] bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+              VIVEZ L'EXPÉRIENCE 2026
             </h2>
           </div>
           
-          <p className="text-base md:text-lg font-[Montserrat] font-light leading-relaxed text-gray-600">
-            Revivez la magie du Nostalgia Lovers Festival 2025 avec notre playlist officielle. 
-            Ces morceaux légendaires qui ont fait vibrer le public vous permettront de replonger 
-            dans l'atmosphère unique de cette édition inoubliable. Écoutez, partagez et 
-            gardez précieusement ces souvenirs musicaux en attendant notre prochaine édition !
+          <p className="text-base md:text-lg font-[Montserrat] font-light leading-relaxed text-gray-700">
+            Plongez dans l'ambiance vibrante du Nostalgia Lovers Festival 2026 avec notre playlist officielle ! 
+            Découvrez les morceaux emblématiques qui rythmeront cette édition exceptionnelle. 
+            Des hits mythiques des années 80 et 90 qui feront vibrer le Parc du Vélodrome. 
+            Écoutez, partagez et préparez-vous à vivre une expérience nostalgique inoubliable !
           </p>
           
           <Link href="https://open.spotify.com/playlist/6pZytTaCxpmqKXqWB03hjY?si=0P1qvmYLSKqmIDC1-djc1g" target="_blank" rel="noopener noreferrer">
             <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 8px 20px rgba(214, 5, 158, 0.3)" }}
+              whileHover={{ scale: 1.05, boxShadow: "0 8px 20px rgba(249, 115, 22, 0.3)" }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 rounded-full text-white text-lg font-black font-[Montserrat] self-start bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 transition-all duration-300 shadow-lg"
+              className="px-8 py-4 rounded-full text-white text-lg font-black font-[Montserrat] self-start bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 transition-all duration-300 shadow-lg"
             >
               Écouter la Playlist
             </motion.button>
@@ -108,11 +83,11 @@ const SpotifyPlaylistSection = () => {
 
           {/* Spotify Embed with Custom Styling and Loading Animation */}
           <div className="bg-white p-4 rounded-2xl shadow-xl transform hover:rotate-1 transition-transform duration-300">
-            <div className="relative pb-[380px] md:pb-[80%] w-full overflow-hidden rounded-xl bg-gradient-to-r from-pink-50 to-purple-50">
+            <div className="relative pb-[380px] md:pb-[80%] w-full overflow-hidden rounded-xl bg-gradient-to-r from-orange-50 to-amber-50">
               
               {/* Loading Animation */}
               {isLoading && (
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-pink-50 to-purple-50">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-orange-50 to-amber-50">
                   {/* Animated vinyl record */}
                   <motion.div 
                     className="relative w-40 h-40 mb-6"
@@ -140,7 +115,7 @@ const SpotifyPlaylistSection = () => {
                     {[...Array(8)].map((_, i) => (
                       <motion.div
                         key={i}
-                        className="w-3 bg-gradient-to-t from-pink-600 to-purple-600 rounded-t-sm"
+                        className="w-3 bg-gradient-to-t from-orange-600 to-amber-600 rounded-t-sm"
                         animate={{ height: [10, 30 * Math.random() + 10, 10] }}
                         transition={{
                           duration: 1.5,
@@ -153,7 +128,7 @@ const SpotifyPlaylistSection = () => {
                   </div>
                   
                   <motion.p 
-                    className="mt-6 text-gray-600 font-medium text-center"
+                    className="mt-6 text-orange-600 font-medium text-center"
                     animate={{ opacity: [0.5, 1, 0.5] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
@@ -190,7 +165,7 @@ const SpotifyPlaylistSection = () => {
             >
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 17.5V5.5C9 4.67 9.67 4 10.5 4H18.5C19.33 4 20 4.67 20 5.5V10M9 17.5C9 18.88 7.88 20 6.5 20C5.12 20 4 18.88 4 17.5C4 16.12 5.12 15 6.5 15C7.88 15 9 16.12 9 17.5ZM20 13.5V10M20 10C20 11.38 18.88 12.5 17.5 12.5C16.12 12.5 15 11.38 15 10C15 8.62 16.12 7.5 17.5 7.5C18.88 7.5 20 8.62 20 10Z" 
-                  stroke="#EC4899" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  stroke="#F97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </motion.div>
             
@@ -209,7 +184,7 @@ const SpotifyPlaylistSection = () => {
             >
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 17.5V5.5C9 4.67 9.67 4 10.5 4H18.5C19.33 4 20 4.67 20 5.5V10M9 17.5C9 18.88 7.88 20 6.5 20C5.12 20 4 18.88 4 17.5C4 16.12 5.12 15 6.5 15C7.88 15 9 16.12 9 17.5Z" 
-                  stroke="#9333EA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </motion.div>
           </div>
@@ -219,4 +194,4 @@ const SpotifyPlaylistSection = () => {
   );
 };
 
-export default SpotifyPlaylistSection;  
+export default SpotifyPlaylistSection;

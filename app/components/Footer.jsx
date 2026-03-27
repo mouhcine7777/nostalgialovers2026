@@ -15,7 +15,7 @@ const Footer = () => {
     <motion.footer 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="relative bg-[#611A4F] text-white py-16 overflow-hidden"
+      className="relative bg-orange-500 text-white py-16 overflow-hidden"
     >
       <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 

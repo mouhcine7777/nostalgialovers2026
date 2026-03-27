@@ -1,8 +1,8 @@
 "use client";
 import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";
-import GallerySection from "./components/GallerySection";
-import SpotifyPlaylistSection from "./components/SpotifyPlaylistSection";
+import Lineup from "./components/Lineup";
+import MomentsSection from "./components/MomentsSection";
 import MapSection from "./components/MapSection";
 import Footer from "./components/Footer";
 
@@ -11,8 +11,8 @@ export default function Home() {
     <main>
       <Navigation />
       <HeroSection />
-      <GallerySection />
-      <SpotifyPlaylistSection />
+      <Lineup />
+      <MomentsSection />
       <MapSection />
       <Footer />
     </main>

@@ -25,10 +25,10 @@ export default function Navbar() {
   }, [isOpen]);
 
   const menuItems = [
-    { title: "ACCUEIL", href: "/", color: "from-cyan-400 to-blue-500" },
-    { title: "LINEUP", href: "/lineup", color: "from-pink-400 to-rose-500" },
-    { title: "ÉDITIONS 1 & 2", href: "/editions", color: "from-purple-400 to-indigo-500" },
-    { title: "CONTACT", href: "/contact", color: "from-yellow-400 to-orange-500" },
+    { title: "ACCUEIL", href: "/", color: "from-orange-300 to-amber-400" },
+    { title: "LINEUP", href: "/lineup", color: "from-orange-400 to-red-500" },
+    { title: "ÉDITIONS 1 & 2", href: "/editions", color: "from-amber-400 to-orange-500" },
+    { title: "CONTACT", href: "/contact", color: "from-yellow-400 to-orange-400" },
   ];
 
   return (
@@ -59,7 +59,7 @@ export default function Navbar() {
                     src="/logo.png"
                     alt="Nostalgia Lovers"
                     fill
-                    className="object-contain filter drop-shadow-[0_0_20px_rgba(236,72,153,0.6)]"
+                    className="object-contain filter drop-shadow-[0_0_20px_rgba(251,146,60,0.6)]"
                   />
                 </div>
               </motion.div>
@@ -75,15 +75,15 @@ export default function Navbar() {
               <div className="flex flex-col items-end gap-1.5">
                 <motion.span
                   animate={isOpen ? { rotate: 45, y: 8, width: 32 } : { rotate: 0, y: 0, width: 32 }}
-                  className="h-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full shadow-[0_0_10px_rgba(236,72,153,0.8)]"
+                  className="h-1 bg-gradient-to-r from-orange-400 to-amber-500 rounded-full shadow-[0_0_10px_rgba(251,146,60,0.8)]"
                 />
                 <motion.span
                   animate={isOpen ? { opacity: 0, width: 24 } : { opacity: 1, width: 24 }}
-                  className="h-1 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full shadow-[0_0_10px_rgba(168,85,247,0.8)]"
+                  className="h-1 bg-gradient-to-r from-amber-500 to-orange-400 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.8)]"
                 />
                 <motion.span
                   animate={isOpen ? { rotate: -45, y: -8, width: 32 } : { rotate: 0, y: 0, width: 20 }}
-                  className="h-1 bg-gradient-to-r from-cyan-500 to-pink-500 rounded-full shadow-[0_0_10px_rgba(34,211,238,0.8)]"
+                  className="h-1 bg-gradient-to-r from-orange-500 to-red-400 rounded-full shadow-[0_0_10px_rgba(239,68,68,0.8)]"
                 />
               </div>
               <span className="absolute -inset-4 bg-white/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
@@ -100,7 +100,7 @@ export default function Navbar() {
             animate={{ clipPath: "circle(150% at 100% 0%)" }}
             exit={{ clipPath: "circle(0% at 100% 0%)" }}
             transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
-            className="fixed inset-0 z-40 bg-gradient-to-br from-black via-purple-950 to-black"
+            className="fixed inset-0 z-40 bg-gradient-to-br from-black via-orange-950 to-black"
           >
             {/* Animated Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
@@ -110,7 +110,7 @@ export default function Navbar() {
                   rotate: [0, 90, 0],
                 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-full blur-3xl"
+                className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-full blur-3xl"
               />
               <motion.div
                 animate={{
@@ -118,7 +118,7 @@ export default function Navbar() {
                   rotate: [0, -90, 0],
                 }}
                 transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"
+                className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-full blur-3xl"
               />
             </div>
 
@@ -145,7 +145,7 @@ export default function Navbar() {
                         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black font-[Montserrat] text-white tracking-tight">
                           {item.title}
                         </h2>
-                        
+
                         {/* Gradient Overlay on Hover */}
                         <motion.div
                           initial={{ x: "-100%" }}
@@ -158,7 +158,7 @@ export default function Navbar() {
                           </h2>
                         </motion.div>
                       </div>
-                      
+
                       {/* Underline Effect */}
                       <motion.div
                         initial={{ width: 0 }}
@@ -172,7 +172,7 @@ export default function Navbar() {
 
               {/* CTA Button */}
               <motion.a
-                href="https://guichet.com/ma-fr/event/concerts/nostalgia-lovers-blind-pass-3-soirees-5536"
+                href="https://guichet.com/ma-fr/event/producer/nostalgia-lovers-fest"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
@@ -184,10 +184,10 @@ export default function Navbar() {
                 whileTap={{ scale: 0.95 }}
                 className="relative px-12 py-5 text-xl lg:text-2xl font-black font-[Montserrat] text-black bg-white rounded-full overflow-hidden group"
               >
-                <span className="relative z-10 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:via-purple-500 group-hover:to-cyan-500 transition-all duration-300">ACHETER BILLETS</span>
+                <span className="relative z-10 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:via-amber-500 group-hover:to-orange-500 transition-all duration-300">ACHETER BILLETS</span>
               </motion.a>
 
-              {/* Social Links / Extra Info */}
+              {/* Bottom Info */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
