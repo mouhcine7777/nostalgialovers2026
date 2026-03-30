@@ -19,15 +19,15 @@ const artistData = {
     { name: 'EARTH, WIND & FIRE EXPERIENCE BY AL MCKAY', image: '/19juin/ewf.webp' },
     { name: 'ICE MC', image: '/19juin/icemc.webp' },
     { name: 'WILLY WILLIAM', image: '/19juin/willywilliam.webp' },
-    { name: 'PARADISIO', image: '/18juin/paradisio.webp' },
-    { name: 'KAOMA', image: '/18juin/kaoma.webp' },
+    { name: 'PARADISIO', image: '/19juin/paradisio.webp' },
+    { name: 'KAOMA', image: '/19juin/kaoma.webp' },
   ],
   '20 Juin': [
     { name: 'VILLAGE PEOPLE', image: '/20juin/villagepeople.webp' },
     { name: 'TAG TEAM', image: '/20juin/tagteam.webp' },
     { name: 'DANTE THOMAS', image: '/20juin/dantethomas.webp' },
     { name: 'CECE PENISTON', image: '/20juin/cecepeniston.webp' },
-    { name: 'DJ CUT KILLER', image: '/19juin/cutkiller.webp' },
+    { name: 'DJ CUT KILLER', image: '/20juin/cutkiller.webp' },
     { name: 'THE WEATHER GIRLS', image: '/20juin/weathergirls.webp' },
   ],
 };
@@ -161,7 +161,7 @@ export default function LineupSection() {
                       <img
                         src="logo.png"
                         alt="Festival logo"
-                        className="w-13 h-12 object-contain"
+                        className="w-20 h-20 object-contain"
                       />
                     </div>
 

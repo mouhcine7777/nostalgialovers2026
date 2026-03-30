@@ -172,7 +172,7 @@ export default function Navbar() {
 
               {/* CTA Button */}
               <motion.a
-                href="https://guichet.com/ma-fr/event/producer/nostalgia-lovers-fest"
+                href="https://guichet.com/ma-fr/event/concerts/nostalgia-lovers-early-bird-3-soirees-5781"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
