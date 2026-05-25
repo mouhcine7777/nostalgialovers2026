@@ -1,6 +1,7 @@
 "use client";
 import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";
+import BannerSection from "./components/BannerSection";
 import Lineup from "./components/Lineup";
 import MomentsSection from "./components/MomentsSection";
 import MapSection from "./components/MapSection";
@@ -11,6 +12,7 @@ export default function Home() {
     <main>
       <Navigation />
       <HeroSection />
+      <BannerSection />
       <Lineup />
       <MomentsSection />
       <MapSection />

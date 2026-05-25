@@ -304,7 +304,7 @@ export default function EditionsPage() {
               ?
             </p>
             <motion.a
-              href="https://guichet.com/ma-fr/event/concerts/nostalgia-lovers-early-bird-3-soirees-5781"
+              href="https://guichet.com/ma-fr/event/concerts/iconic-pass-3-soirees-5995"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, boxShadow: '0 8px 32px rgba(249,115,22,0.4)' }}

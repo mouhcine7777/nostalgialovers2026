@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const ticketUrl = "https://guichet.com/ma-fr/event/concerts/nostalgia-lovers-early-bird-3-soirees-5781";
+  const ticketUrl = "https://guichet.com/ma-fr/event/concerts/iconic-pass-3-soirees-5995";
 
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">
@@ -29,27 +29,16 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="mb-8 select-none pointer-events-none"
+          className="mb-6 select-none pointer-events-none"
           onContextMenu={(e) => e.preventDefault()}
           onDragStart={(e) => e.preventDefault()}
         >
-          <Image
-            src="/earlybird.png"
-            alt="Early Bird"
-            width={400}
-            height={400}
-            className="w-64 sm:w-80 md:w-120 h-auto drop-shadow-2xl select-none pointer-events-none"
-            draggable={false}
-            onContextMenu={(e) => e.preventDefault()}
-            onDragStart={(e) => e.preventDefault()}
-            style={{
-              userSelect: "none",
-              WebkitUserSelect: "none",
-              MozUserSelect: "none",
-              msUserSelect: "none",
-              pointerEvents: "none",
-            }}
-          />
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-300 via-orange-400 to-amber-400 font-[Montserrat] tracking-tight drop-shadow-2xl">
+            ICONIC PASS
+          </h1>
+          <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-[Montserrat] mt-2 tracking-wide">
+            3 SOIRÉES
+          </p>
         </motion.div>
 
         <motion.div
@@ -69,7 +58,7 @@ export default function HeroSection() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg sm:text-xl md:text-2xl text-white font-[Montserrat] mb-8 max-w-2xl px-4"
         >
-          Réservez vos billets Early Bird et vivez l&apos;expérience ultime du retour aux années 80 &amp; 90 !
+          Réservez votre Iconic Pass et vivez l&apos;expérience ultime du retour aux années 80 &amp; 90 sur 3 soirées inoubliables !
         </motion.p>
 
         <motion.div
@@ -107,10 +96,10 @@ export default function HeroSection() {
             {[...Array(8)].map((_, i) => (
               <div key={i} className="flex items-center whitespace-nowrap flex-shrink-0">
                 <span className="text-white font-bold font-[Montserrat] text-base sm:text-lg md:text-xl">
-                  EARLY BIRD DISPONIBLES MAINTENANT
+                  ICONIC PASS — 3 SOIRÉES DISPONIBLE MAINTENANT
                 </span>
                 <span className="text-white font-extrabold font-[Montserrat] text-base sm:text-lg md:text-xl bg-orange-900 px-3 py-1 rounded-lg ml-2 mr-4">
-                  Quantité limitée 🔥
+                  Places limitées
                 </span>
                 <div className="w-[25px] sm:w-[40px] md:w-[200px] flex-shrink-0" />
               </div>

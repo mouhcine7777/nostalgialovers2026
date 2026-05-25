@@ -27,6 +27,7 @@ export default function Navbar() {
   const menuItems = [
     { title: "ACCUEIL", href: "/", color: "from-orange-300 to-amber-400" },
     { title: "LINEUP", href: "/lineup", color: "from-orange-400 to-red-500" },
+    { title: "VIP & VVIP", href: "/vip", color: "from-amber-400 to-orange-500" },
     { title: "ÉDITIONS 1 & 2", href: "/editions", color: "from-amber-400 to-orange-500" },
     { title: "CONTACT", href: "/contact", color: "from-yellow-400 to-orange-400" },
   ];
@@ -142,7 +143,7 @@ export default function Navbar() {
                       className="group relative text-center cursor-pointer"
                     >
                       <div className="relative overflow-hidden">
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black font-[Montserrat] text-white tracking-tight">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-black font-[Montserrat] text-white tracking-tight">
                           {item.title}
                         </h2>
 
@@ -172,7 +173,7 @@ export default function Navbar() {
 
               {/* CTA Button */}
               <motion.a
-                href="https://guichet.com/ma-fr/event/concerts/nostalgia-lovers-early-bird-3-soirees-5781"
+                href="https://guichet.com/ma-fr/event/concerts/iconic-pass-3-soirees-5995"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
