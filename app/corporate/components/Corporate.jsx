@@ -218,17 +218,17 @@ export default function NostalgiaCorporateLanding() {
             <Crown size={14} /> Offres Entreprises · Groupes & Corporate
           </div>
 
-          <h1 className="mx-auto max-w-6xl text-[15vw] font-black uppercase leading-[0.78] sm:text-[80px] lg:text-[120px]">
-            VIVEZ NOSTALGIA
+          <h1 className="mx-auto max-w-6xl text-[13vw] font-black uppercase leading-[0.82] tracking-[0.02em] sm:text-[68px] lg:text-[104px]">
+            L'EXPÉRIENCE CORPORATE
             <span className="block bg-gradient-to-r from-[#f7e0b5] via-[#d69a45] to-[#ff7a1a] bg-clip-text text-transparent">
-              EN ENTREPRISE
+              LA PLUS ICONIQUE
             </span>
           </h1>
 
           <p className="mx-auto mt-9 max-w-2xl text-base leading-8 text-[#cdbfab] md:text-xl">
-            Offrez à vos clients, partenaires et collaborateurs une expérience
-            privée et inoubliable au cœur de Nostalgia Lovers — depuis les
-            meilleurs espaces du Vélodrome de Casablanca.
+            Invitez vos clients, partenaires et collaborateurs à l'un des plus
+            grands rendez-vous musicaux de l'année, avec des formules adaptées
+            aux entreprises et aux groupes.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -236,11 +236,11 @@ export default function NostalgiaCorporateLanding() {
               onClick={scrollToForm}
               className="group rounded-full bg-[#f5c46c] px-8 py-4 text-sm font-black uppercase tracking-[0.16em] text-[#130b05] shadow-[0_20px_70px_rgba(245,196,108,0.22)] transition hover:-translate-y-0.5 hover:bg-[#ffd98b]"
             >
-              Demander un devis entreprise{" "}
+              Recevoir mon offre{" "}
               <ArrowRight className="ml-2 inline transition group-hover:translate-x-1" size={16} />
             </button>
             <a
-              href="tel:+212667165123"
+              href="tel:+212666821502"
               className="rounded-full border border-[#c99145]/30 px-8 py-4 text-sm font-bold uppercase tracking-[0.16em] text-[#d69a45] transition hover:bg-[#d69a45]/10"
             >
               Parler à un conseiller
@@ -283,11 +283,11 @@ export default function NostalgiaCorporateLanding() {
             Pourquoi les entreprises choisissent Nostalgia
           </div>
           <h2 className="text-4xl font-black uppercase leading-[0.95] tracking-[-0.04em] md:text-6xl">
-            Bien plus qu'une soirée.
+            Bien plus qu'un festival.
           </h2>
           <p className="mt-6 text-lg leading-8 text-[#bdad98]">
-            Un levier de relation client, de cohésion d'équipe et d'image de
-            marque — pensé pour les groupes et les entreprises exigeantes.
+            Une expérience unique pour remercier vos clients, fédérer vos
+            équipes et créer des souvenirs durables.
           </p>
         </motion.div>
 
@@ -312,7 +312,7 @@ export default function NostalgiaCorporateLanding() {
             Offres groupes disponibles
           </div>
           <h2 className="text-4xl font-black uppercase leading-[0.95] tracking-[-0.04em] md:text-6xl">
-            Choisissez votre formule.
+            Tarifs préférentiels entreprises.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-[#8d7c68]">
             Choisissez la formule la plus adaptée à votre entreprise.
@@ -349,7 +349,7 @@ export default function NostalgiaCorporateLanding() {
         <div className="mx-auto mt-10 flex max-w-2xl items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-5 text-center text-sm text-[#cdbfab]">
           <Users size={20} className="shrink-0 text-[#d69a45]" />
           <span>
-            Billets pour 1 soirée ou Pass 3 soirées — notre équipe vous accompagne.
+            Pass 1 soirée ou 3 soirées — notre équipe s'occupe du reste.
           </span>
         </div>
       </section>
@@ -365,7 +365,7 @@ export default function NostalgiaCorporateLanding() {
                 Demande de devis · Entreprises
               </div>
               <h2 className="mt-6 text-4xl font-black uppercase leading-[0.95] tracking-[-0.05em] md:text-6xl">
-                Construisons votre soirée.
+                Recevez votre proposition.
               </h2>
               <p className="mt-6 max-w-md text-sm leading-7 text-[#bdad98]">
                 Parlez-nous de votre projet : nous revenons vers vous avec une
@@ -378,8 +378,8 @@ export default function NostalgiaCorporateLanding() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={17} className="text-[#d69a45]" />
-                <a href="tel:+212667165123" className="hover:text-[#f5c46c] transition-colors">
-                  +212 6 67 16 51 23
+                <a href="tel:+212666821502" className="hover:text-[#f5c46c] transition-colors">
+                  +212 666-821502
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -517,7 +517,7 @@ export default function NostalgiaCorporateLanding() {
                     disabled={status === "loading"}
                     className="shrink-0 rounded-full bg-[#f5c46c] px-7 py-4 text-xs font-black uppercase tracking-[0.16em] text-[#120b05] shadow-[0_18px_70px_rgba(245,196,108,0.18)] hover:bg-[#ffd98b] disabled:opacity-50 disabled:cursor-not-allowed transition"
                   >
-                    {status === "loading" ? "Envoi en cours…" : "Recevoir un devis"}
+                    {status === "loading" ? "Envoi en cours…" : "Recevoir mon offre"}
                   </button>
                 </div>
               </>

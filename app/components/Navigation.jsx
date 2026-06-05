@@ -28,6 +28,7 @@ export default function Navbar() {
     { title: "ACCUEIL", href: "/", color: "from-orange-300 to-amber-400" },
     { title: "LINEUP", href: "/lineup", color: "from-orange-400 to-red-500" },
     { title: "VIP & VVIP", href: "/vip", color: "from-amber-400 to-orange-500" },
+    { title: "CORPORATE", href: "/corporate", color: "from-amber-400 to-orange-500" },
     { title: "ÉDITIONS 1 & 2", href: "/editions", color: "from-amber-400 to-orange-500" },
     { title: "CONTACT", href: "/contact", color: "from-yellow-400 to-orange-400" },
   ];
@@ -143,24 +144,19 @@ export default function Navbar() {
                       className="group relative text-center cursor-pointer"
                     >
                       <div className="relative overflow-hidden">
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-black font-[Montserrat] text-white tracking-tight">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-5xl font-black font-[Montserrat] text-white tracking-tight">
                           {item.title}
                         </h2>
 
-                        {/* Gradient Overlay on Hover */}
-                        <motion.div
-                          initial={{ x: "-100%" }}
-                          whileHover={{ x: 0 }}
-                          transition={{ duration: 0.5, ease: "easeInOut" }}
-                          className={`absolute inset-0 bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}
-                        >
+                        {/* Gradient Overlay - Removed hover animation, kept static but hidden */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent opacity-0">
                           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black font-[Montserrat] tracking-tight">
                             {item.title}
                           </h2>
-                        </motion.div>
+                        </div>
                       </div>
 
-                      {/* Underline Effect */}
+                      {/* Underline Effect - Kept */}
                       <motion.div
                         initial={{ width: 0 }}
                         whileHover={{ width: "100%" }}
@@ -185,7 +181,7 @@ export default function Navbar() {
                 whileTap={{ scale: 0.95 }}
                 className="relative px-12 py-5 text-xl lg:text-2xl font-black font-[Montserrat] text-black bg-white rounded-full overflow-hidden group"
               >
-                <span className="relative z-10 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:via-amber-500 group-hover:to-orange-500 transition-all duration-300">ACHETER BILLETS</span>
+                <span className="relative z-10">ACHETER BILLETS</span>
               </motion.a>
 
               {/* Bottom Info */}
