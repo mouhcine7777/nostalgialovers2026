@@ -173,7 +173,7 @@ export default function Navbar() {
 
               {/* CTA Button */}
               <motion.a
-                href="https://guichet.com/ma-fr/event/concerts/iconic-pass-3-soirees-5995"
+                href="https://guichet.com/ma-fr/event/producer/nostalgia-lovers-fest"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const ticketUrl = "https://guichet.com/ma-fr/event/concerts/iconic-pass-3-soirees-5995";
+  const ticketUrl = "https://guichet.com/ma-fr/event/producer/nostalgia-lovers-fest";
 
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">
